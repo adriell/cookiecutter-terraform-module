@@ -1,25 +1,21 @@
-# Módulo Terraform - {{ cookiecutter.terraform_provider }} - {{ cookiecutter.terraform_module }}
+# Cookiecutter - Terraform Module
 
-Módulo do Terraform para provisionamento de....
+Template do [Cookiecutter][cookiecutter] para criação de um repositório modulo [Terraform][terraform].
 
+[cookiecutter]: https://cookiecutter.readthedocs.io/en/latest/
+[terraform]: https://www.terraform.io/
+
+## Pré-requisitos
+
+- Cookiecutter 1.7+
+- Terraform 0.12.x
+- Terragrunt 0.28.x
 
 ## Uso
 
-```hcl
-module "{{ cookiecutter.module_slug }}" {
-  source = "git::ssh://git@example.com/terraform-modules/{{ cookiecutter.module_slug }}.git?ref=v0.1.0"
-
-  name          = "TF - exemplo"
-  tags {
-    Name = "tf-testes"
-  }
-}
 ```
-
-## Recursos provisionados
-
-
-## Customizações
+cookiecutter git@github.com:adriell/cookiecutter-terraform-module.git
+```
 
 
 ## Licença
