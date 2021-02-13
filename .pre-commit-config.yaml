@@ -1,0 +1,14 @@
+repos:
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.16.0
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_docs
+      args: ["--args=--sort-inputs-by-required --with-aggregate-type-defaults"]
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v2.2.3
+  hooks:
+    - id: check-added-large-files
+    - id: check-merge-conflict
+    - id: trailing-whitespace
+      args: [--markdown-linebreak-ext=md]

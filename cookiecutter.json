@@ -1,0 +1,6 @@
+{
+  "terraform_module": "VPC",
+  "module_slug": "{{ cookiecutter.terraform_module | lower | replace(' ', '-') }}",
+  "terraform_provider": "AWS",
+  "provider_slug": "{{ cookiecutter.terraform_provider | lower | replace(' ', '') | replace('-', '_') }}"
+}
